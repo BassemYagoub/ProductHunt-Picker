@@ -1,0 +1,22 @@
+#stats{
+    float: left;
+    min-width: 20%;
+    max-height: 50%;
+}
+
+#topics-card{
+    padding: 20px;
+    position: fixed;
+    max-height: 50%;
+    overflow: auto;
+}
+
+#topics-proportions-title{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.topic-proportion-mat-chip{
+    display: block;
+    margin : 5px 0;
+}

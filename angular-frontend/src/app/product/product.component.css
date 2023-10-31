@@ -1,0 +1,37 @@
+
+.img-product{
+    width: 40px;
+    padding: 5px;
+}
+
+.product-link{
+    text-align: center;
+    margin: auto 0;
+    color: black;
+}
+
+.product-card{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.product-main-info{
+    display: flex;
+}
+
+.product-upvotes{
+    margin-left: auto;
+}
+
+.product-tagline{
+    margin-left: 5px;
+    color: #858585;
+}
+
+.product-secondary-info{
+    margin-left: 5px;
+}
+
+.product-topic{
+    margin-right : 4px;
+}

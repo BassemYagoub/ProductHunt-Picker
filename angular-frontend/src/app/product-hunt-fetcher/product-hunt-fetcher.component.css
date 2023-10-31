@@ -1,0 +1,32 @@
+
+.product-card{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#loading-products-button{
+    display: block;
+    margin: auto;
+}
+
+#products-buttons{
+    margin: auto;
+    width: fit-content;
+}
+
+#up-button{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#up-arrow-icon{
+    position: relative;
+    top: 5px;
+}
+
+main{
+    float: left;
+    width: 75%;
+    margin-right: 5%;
+}

@@ -1,0 +1,27 @@
+<main>
+  <app-date-picker (dateIsPicked)="updateProducts($event)"></app-date-picker>
+  
+  <div id="products">
+    <mat-card class = "product-card" *ngFor="let product of products" id="{{ product.id }}">
+      <app-product [product]="product"></app-product>
+    </mat-card>
+  </div>
+</main>
+
+<app-topic-stats *ngIf="isAnyProductAvailable()"></app-topic-stats>
+
+<div id="products-buttons" *ngIf="isAnyProductAvailable()" >
+  <button 
+    id="loading-products-button" 
+    mat-raised-button color="primary" 
+    (click)="fetchNextPage()" 
+    [disabled]="!pageInfo?.hasNextPage"
+  >
+    Load more products
+  </button>
+
+  <a id="up-button" href="#container">
+    Go back up
+    <mat-icon id="up-arrow-icon" aria-hidden="false" aria-label="arrow upward" fontIcon="arrow_upward"></mat-icon>
+  </a>
+</div>

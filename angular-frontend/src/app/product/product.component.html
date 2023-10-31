@@ -1,0 +1,19 @@
+<div class="product-main-info">
+    <img src="{{product.thumbnail.url}}" class="img-product" alt="{{product.name}}">
+    <a href="{{product.website}}" class="product-link"><h2>{{product.name}}</h2></a>
+
+    <span class="product-upvotes">{{ product.votesCount }}</span>
+    <mat-icon aria-hidden="false" aria-label="arrow up" fontIcon="arrow_drop_up"></mat-icon>
+  </div>
+  <p class="product-tagline">{{product.tagline}}</p>
+  
+  <div class="product-secondary-info">
+    <div class="product-description">
+      <p>{{ product.description }}</p>
+    </div>
+    <div class="product-topics">
+      <span class="product-topic" *ngFor="let topics of product.topics.nodes">
+        <mat-chip *ngFor="let topic of topics | keyvalue">{{ topic.value }}</mat-chip>
+      </span>
+    </div>
+</div>

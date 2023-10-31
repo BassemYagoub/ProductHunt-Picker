@@ -1,0 +1,12 @@
+<div id="stats">
+    <mat-card id="topics-card">
+      <mat-card-header id="topics-proportions-title">
+        <mat-card-title>Topics Proportions</mat-card-title> 
+      </mat-card-header>
+      <mat-divider></mat-divider>
+     
+      <mat-card-content *ngFor="let topicName of topicsSlugs"> 
+        <mat-chip class="topic-proportion-mat-chip">{{topicName}} : {{topicsProportions[topicName]}}</mat-chip>
+      </mat-card-content>
+    </mat-card>
+</div>
